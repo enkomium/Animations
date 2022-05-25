@@ -2,6 +2,9 @@ body {
     padding-top: 30px;
 
     background-color: rgb(63, 63, 63);
+    background-image: url(./img/kosmos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* /////////////////////////////////////////////////--------КОНОПКА--------////////////////////////////////////// */
@@ -154,3 +157,57 @@ body {
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////--------------СВИНКА-------------////////////////////////////////////////// */
+
+.pig {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    background-image: url(./img/pig-pig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* animation-name: svinina;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running; */
+
+    animation: svinina 3000ms linear 100ms infinite alternate none running,
+    svin 5s linear 0s infinite;
+}
+
+.pig:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes svinina {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+@keyframes svin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
