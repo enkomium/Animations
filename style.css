@@ -184,8 +184,8 @@ body {
     animation-fill-mode: none;
     animation-play-state: running; */
 
-    animation: svinina 3000ms linear 100ms infinite alternate none running,
-    svin 5s linear 0s infinite;
+    animation: svinina 5000ms linear 100ms infinite alternate none running,
+    svin 10s linear 0s infinite;
 }
 
 .pig:hover {
